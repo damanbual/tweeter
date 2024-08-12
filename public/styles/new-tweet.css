@@ -1,5 +1,9 @@
 
 .new-tweet {
+  display: none; /* Hide the new tweet container by default */
+}
+
+.new-tweet {
   background-color: #ffffff;
   padding: 20px;
   border-radius: 8px;

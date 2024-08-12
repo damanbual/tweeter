@@ -102,12 +102,12 @@ $(document).ready(function() {
     });
   });
 
-
+  // Toggle visibility of the new tweet container
   $('.write-new-tweet').on('click', function() {
-    $('html, body').animate({
-      scrollTop: $('#compose-tweet').offset().top
-    }, 800, function() {
-      $('#tweet-text').focus(); // Automatically focus on the textarea
+    $('.new-tweet').slideToggle(400, function() {
+      if ($(this).is(':visible')) {
+        $('#tweet-text').focus(); // Focus on textarea when the container is shown
+      }
     });
   });
 });
