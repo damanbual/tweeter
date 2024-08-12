@@ -1,25 +1,74 @@
 
-header {
+/* Base header styling */
+header.main-header {
+  background-color: #de9138;
+  background-image: url("/images/brushed-alum.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
-  background-color: #ffcc80;
-  background-image: url('https://www.transparenttextures.com/patterns/45-degree-fabric-light.png');
-  text-align: center;
-  padding: 20px 0;
-}
-
-header div {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  height: 300px; /* Adjust the height */
 }
 
-header img {
-  width: 150px;
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.avatar img {
+  width: 150px; /* Adjust the size */
+  height: 150px; /* Adjust the size */
   border-radius: 50%;
 }
 
-header h2 {
-  margin-top: 10px;
-  font-size: 2em;
+.your-name {
+  text-align: center;
+  color: #fefefe;
+  font-size: 18px; /* Adjust the size */
 }
+
+/* Tablet screens */
+@media (min-width: 768px) {
+  header.main-header {
+    height: 350px;
+    padding: 30px;
+
+  .avatar img {
+    width: 175px;
+    height: 175px;
+  }
+
+  .your-name {
+    font-size: 20px;
+  }
+}
+
+/* Desktop screens */
+@media (min-width: 1024px) {
+  header.main-header {
+    height: 400px;
+    padding: 40px;
+  }
+
+  .avatar img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .your-name {
+    font-size: 24px;
+  }
+
+  .parent {
+    display: flex;
+    padding-top: 100px;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin: 50px;
+  }
