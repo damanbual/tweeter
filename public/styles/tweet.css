@@ -1,0 +1,92 @@
+
+/* tweet.css */
+/* Container */
+#tweets-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: none; /* Ensure no background color or image */
+  padding: 10px;
+}
+
+/* Tweet */
+.tweet {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #fff;
+  transition: box-shadow 0.3s ease;
+}
+
+.tweet:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.24);
+}
+
+/* Header inside tweet */
+.tweet header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile-pic img {
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  margin-right: 20px;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Push the handle to the right */
+  align-items: flex-end; /* Align handle to the right */
+}
+
+.user-info h2 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  align-self: flex-start; /* Align username to the left */
+}
+
+.user-info .handle {
+  margin: 0;
+  font-size: 14px;
+  color: #657786;
+  margin-top: -20px;
+}
+
+/* Tweet Content */
+.tweet-content {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.date-posted {
+  color: #657786;
+  font-size: 12px;
+}
+
+.tweet-actions {
+  display: flex;
+}
+
+.tweet-actions i {
+  margin-right: 10px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.tweet-actions i:hover {
+  color: #1da1f2;
+}
+
