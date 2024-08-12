@@ -101,5 +101,14 @@ $(document).ready(function() {
       }
     });
   });
+
+
+  $('.write-new-tweet').on('click', function() {
+    $('html, body').animate({
+      scrollTop: $('#compose-tweet').offset().top
+    }, 800, function() {
+      $('#tweet-text').focus(); // Automatically focus on the textarea
+    });
+  });
 });
 
