@@ -10,22 +10,25 @@ nav {
   align-items: center;
   padding: 0 1.5em;
   box-sizing: border-box;
-}
-
-nav span {
   font-family: 'Bungee', sans-serif;
+  top: 0;
 }
 
-.new-tweet {
+.write-new-tweet {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
-.new-tweet span {
-  color: #ffffff; 
+.write-new-tweet p {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  font-family: 'Source Sans 3', sans-serif;
 }
 
-.new-tweet i {
-  color: red;
+.write-new-tweet i {
+  font-size: 1.5em;
+  color: white;
 }

@@ -110,3 +110,32 @@ header h1 {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+ /* Styling for tablet screens */
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+
+  main {
+    width: 80%;
+  }
+}
+
+/* Styling for desktop screens */
+@media (min-width: 1024px) {
+  body {
+    font-size: 16px;
+    padding-top: 60px;
+  }
+
+  main {
+    width: 70%;
+    max-width: 1200px;
+    background-color: #ffffff;
+    padding: 40px; 
+  }
+
+  .parent {
+    display: flex;
+  }
+}
