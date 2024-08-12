@@ -35,3 +35,7 @@ app.use("/tweets", tweetsRoutes);
 app.listen(PORT, () => {
   console.log("Example app listening on port " + PORT);
 });
+
+app.get('/tweets', (req, res) => {
+  res.json(data); // Assuming `data` is your tweets array
+});
