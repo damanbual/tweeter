@@ -16,7 +16,7 @@
   padding: 20px;
   background-color: #fff;
   transition: box-shadow 0.3s ease;
-  word-wrap: break-word;
+  max-width: 500px;
 }
 
 .tweet:hover {
@@ -62,6 +62,7 @@
 .tweet-content {
   margin-top: 10px;
   font-size: 14px;
+  word-wrap: break-word;
 }
 
 /* Footer */
