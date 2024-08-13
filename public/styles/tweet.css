@@ -16,6 +16,7 @@
   padding: 20px;
   background-color: #fff;
   transition: box-shadow 0.3s ease;
+  word-wrap: break-word;
 }
 
 .tweet:hover {
@@ -90,3 +91,6 @@ footer {
   color: #1da1f2;
 }
 
+.tweet-content p {
+  word-break: break-word;
+}

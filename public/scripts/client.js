@@ -3,6 +3,13 @@ $(document).ready(function() {
   // Constant for maximum tweet length
   const MAX_TWEET_LENGTH = 140;
 
+  // Escape function to prevent XSS attacks
+  const escape = function(str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
+
   // Function to create the HTML structure for a tweet
   const createTweetElement = (tweet) => {
     return `
@@ -12,12 +19,12 @@ $(document).ready(function() {
             <img src="${tweet.user.avatars}" alt="User's profile picture" />
           </div>
           <div class="user-info">
-            <h2>${tweet.user.name}</h2>
-            <p class="handle">${tweet.user.handle}</p>
+            <h2>${escape(tweet.user.name)}</h2>
+            <p class="handle">${escape(tweet.user.handle)}</p>
           </div>
         </header>
         <div class="tweet-content">
-          <p>${tweet.content.text}</p>
+          <p>${escape(tweet.content.text)}</p> 
         </div>
         <footer>
           <div class="date-posted">
