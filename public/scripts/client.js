@@ -23,7 +23,7 @@ $(document).ready(function() {
             <p class="handle">${escape(tweet.user.handle)}</p>
           </div>
         </header>
-        <div class="tweet-content">
+        <div class="tweet-content"> 
           <p>${escape(tweet.content.text)}</p> 
         </div>
         <footer>
