@@ -16,7 +16,7 @@ html {
 
  body {
   color: #545149;
-  background-color: cornsilk;
+  background-color: #f4f1ec;
   font-size: 24px;
   font-family: 'Source Sans 3', sans-serif;
   padding-top: 120px; /* This pushes content below the fixed nav */
@@ -28,14 +28,6 @@ html {
 }
 
 /* New styles to be added */
-
-body {
-  color: #545149;
-  background-color: #f4f1ec;
-  font-size: 24px;
-  font-family: 'Source Sans 3', sans-serif;
-  padding-top: 120px;
-}
 
 main {
   width: 90%;
@@ -62,7 +54,7 @@ main {
 @media (min-width: 1024px) {
   body {
     font-size: 16px;
-    padding-top: 60px;
+   padding-top: 60px;
   }
 
   main {

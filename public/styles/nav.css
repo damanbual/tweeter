@@ -26,11 +26,16 @@ nav {
 .write-new-tweet p {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin: 0;
   font-family: 'Source Sans 3', sans-serif;
 }
 
+.write-new-tweet p b {
+  margin: 2px;
+}
+
 .write-new-tweet i {
   font-size: 1.5em;
-  color: white;
+  color: tomato;
 }
